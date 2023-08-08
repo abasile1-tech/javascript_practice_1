@@ -10,3 +10,14 @@ a string containing the name property and the food that was eaten.
 For example: 'Scooby Doo ate a Scooby Snack'.
 */
 
+const Pet = function (name, species) {
+	this.name = name;
+	this.species = species;
+}
+
+Pet.prototype.eat = function (food) {
+	console.log(`${this.name} ate a ${food}`);
+}
+
+scooby = new Pet('Scooby Doo', 'Dog');
+scooby.eat('Scooby Snack');
