@@ -4,5 +4,7 @@ const Person = require('./person.js');
 const scooby = new Pet('Scooby Doo', 'Dog');
 scooby.eat('Scooby Snack');
 
-const shaggy = new Person('Shaggy Rogers');
+const shaggy = new Person('Shaggy Rogers', scooby);
 shaggy.greet();
+
+shaggy.feedPet('Scooby Snack');
