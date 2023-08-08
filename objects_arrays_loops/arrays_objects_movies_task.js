@@ -55,6 +55,12 @@ var movies = [
 	
 // 1. Loop through the array of movies and make each movie's 
 //title all capital letters.
+
+for (let movie of movies) {
+	movie.title = movie.title.toUpperCase();
+}
+
+console.log(movies);
 	
 // 2. Loop through the array and find the movie with the 
 //title Citizen Kane. log its year of release.
