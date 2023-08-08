@@ -23,5 +23,16 @@ not have a key that matches the string. Store this function
 in an appropriately named variable to invoke it.
 */
 
+var is_key_in_object = function (obj, name) {
+	if (name == obj.name) {
+		return true;
+	}
+	return false;
+}
 
+let obj1 = {name: 'Wojtek', age: 30};
+let obj2 = {name: "Bob", age: 27};
+
+console.log(is_key_in_object(obj1,'Bob'));
+console.log(is_key_in_object(obj1, 'Wojtek'));
 
