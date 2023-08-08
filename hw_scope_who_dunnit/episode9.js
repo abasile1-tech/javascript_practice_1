@@ -10,3 +10,11 @@ const declareMurderer = function() {
 
 const verdict = declareMurderer();
 console.log(verdict);
+
+/*
+I think that the output will be:
+  The murderer is Professor Plum.
+
+The output actually was:
+  The murderer is Professor Plum.
+*/

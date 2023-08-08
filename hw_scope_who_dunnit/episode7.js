@@ -23,3 +23,11 @@ const declareMurderer = function() {
 changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
+
+/*
+I think that the output will be:
+  The murderer is Mr. Green.
+
+The output actually was:
+  The murderer is Mr. Green.
+*/

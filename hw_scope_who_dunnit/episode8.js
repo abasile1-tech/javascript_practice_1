@@ -32,3 +32,11 @@ const declareWeapon = function() {
 changeScenario();
 const verdict = declareWeapon();
 console.log(verdict);
+
+/*
+I think that the output will be:
+  The weapon is Candle Stick.
+
+The output actually was:
+  The weapon is Candle Stick.
+*/
