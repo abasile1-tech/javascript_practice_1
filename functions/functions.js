@@ -21,3 +21,9 @@ function sayHello4(greeting, name = 'World') {
 }
 
 console.log('sayHello4 message:', sayHello4('Hi', 'Danielle'));
+
+var add = function (firstNumber, secondNumber) {
+	return firstNumber + secondNumber;
+}
+
+console.log('1 + 3 with add:', add(1,3))
