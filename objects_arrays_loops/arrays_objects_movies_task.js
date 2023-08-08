@@ -73,3 +73,7 @@ for (let movie of movies) {
 	
 // 3. Using a different kind of loop, iterate through 
 //the movies and log each movie's title and audience rating.
+
+for (let i=0; i < movies.length; i++) {
+	console.log(`title: ${movies[i].title}, audience rating: ${movies[i].ratings.audience}`)
+}
