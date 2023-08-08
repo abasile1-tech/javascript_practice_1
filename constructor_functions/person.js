@@ -1,6 +1,6 @@
-const Person = function () {
-
+const Person = function (name) {
+	this.name = name;
 }
 
-const shaggy = new Person();
-console.log('shaggy:', shaggy);
+const shaggy = new Person('Shaggy Rogers');
+console.log('shaggy\'s name:', shaggy.name);
