@@ -10,3 +10,13 @@ const declareAllSuspects = function() {
 const suspects = declareAllSuspects();
 console.log(suspects);
 console.log(`Suspect three is ${suspectThree}.`);
+
+/*
+I think that the output will be:
+  The suspects are Miss Scarlet, Professor Plum, Colonel Mustard.
+  Suspect three is Mrs. Peacock.
+
+The output actually was:
+  The suspects are Miss Scarlet, Professor Plum, Colonel Mustard.
+  Suspect three is Mrs. Peacock.
+*/
