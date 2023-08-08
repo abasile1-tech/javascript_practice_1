@@ -21,3 +21,5 @@ Pet.prototype.eat = function (food) {
 
 scooby = new Pet('Scooby Doo', 'Dog');
 scooby.eat('Scooby Snack');
+
+module.exports = Pet;

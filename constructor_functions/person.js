@@ -11,3 +11,5 @@ shaggy.greet();
 
 const velma = new Person('Velma Dinkley');
 velma.greet();
+
+module.exports = Person;
