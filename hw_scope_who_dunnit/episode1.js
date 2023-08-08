@@ -17,3 +17,11 @@ const declareMurderer = function() {
 
 const verdict = declareMurderer();
 console.log(verdict);
+
+/*
+I think that the output will be:
+  The murderer is Miss Scarlet.
+
+The output actually was:
+  The murderer is Miss Scarlet.
+*/
