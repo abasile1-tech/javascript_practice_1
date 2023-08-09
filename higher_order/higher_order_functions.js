@@ -22,3 +22,13 @@ const multiplyByTwo = function (numbers) {
 }
 
 console.log(multiplyByTwo(myNumbers));
+
+const multiplyByTwoMap = function (numbers) {
+	const result = numbers.map((number) => {
+		return number * 2;
+	});
+
+	return result;
+}
+
+console.log(multiplyByTwoMap(myNumbers));

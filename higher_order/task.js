@@ -25,6 +25,15 @@ const getEvens = function (numbers) {
 
 console.log(getEvens(myNumbers));
 
+const getEvensFilter = function (numbers) {
+	const evens = numbers.filter((number) => {
+		return number % 2 === 0;
+	})
+	return evens;
+}
+
+console.log(getEvensFilter(myNumbers));
+
 const sumElements = function (numbers) {
 	let total = 0;
 	numbers.forEach((number) => {
@@ -34,3 +43,13 @@ const sumElements = function (numbers) {
 }
 
 console.log(sumElements(myNumbers));
+
+const sumElementsReduce = function (numbers) {
+	const total = numbers.reduce((runningTotal, number) => {
+		return runningTotal + number;
+	}, 0);
+
+	return total;
+}
+
+console.log(sumElementsReduce(myNumbers));
