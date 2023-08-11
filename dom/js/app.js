@@ -11,8 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	console.log(redElement);
 
 	const redListItem = document.querySelector('li.red');
+	redListItem.textContent = 'RED!!';
+	redListItem.classList.add('bold');
 	console.dir(redListItem);
 
 	const allRedElements = document.querySelectorAll('li');
 	console.dir(allRedElements);
+
+	const newListItem = document.createElement('li');
+	newListItem.textContent = 'Purple';
+	newListItem.classList.add('purple');
+
+	const list = document.querySelector('ul');
+	list.appendChild(newListItem);
 });
