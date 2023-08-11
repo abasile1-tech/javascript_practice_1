@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const selectElement = document.querySelector('#select');
   selectElement.addEventListener('change', handleSelectChange);
+
+  const  form = document.querySelector('#form');
+  form.addEventListener('submit', handleFormSubmit);
 });
 
 const handleButtonClick = function () {
@@ -22,4 +25,14 @@ const handleInput = function (event) {
 const handleSelectChange = function (event) {
   const resultParagraph = document.querySelector('#select-result');
   resultParagraph.textContent = `You went with: ${event.target.value}`;
+}
+
+const handleFormSubmit = function (event) {
+  event.preventDefault();
+  const resultParagraph = document.querySelector('#form-result');
+  resultParagraph.textContent = `
+    Your name:
+    ${this.first_name.value}
+    ${this.last_name.value}
+  `
 }
