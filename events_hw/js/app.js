@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const textInput = document.querySelector('#input');
   textInput.addEventListener('input', handleInput);
+
+  const selectElement = document.querySelector('#select');
+  selectElement.addEventListener('change', handleSelectChange);
 });
 
 const handleButtonClick = function () {
@@ -14,4 +17,9 @@ const handleButtonClick = function () {
 const handleInput = function (event) {
   const resultParagraph = document.querySelector('#input-result');
   resultParagraph.textContent = `You typed: ${event.target.value}`;
+}
+
+const handleSelectChange = function (event) {
+  const resultParagraph = document.querySelector('#select-result');
+  resultParagraph.textContent = `You went with: ${event.target.value}`;
 }
