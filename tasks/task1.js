@@ -86,6 +86,11 @@ Then use a for..of statement to log out the items in arrFromStr.
 -------------------------------------------------------------- */
 
 // Write your code here...
+let myString = "apple,banana,orange";
+let arrFromStr = myString.split(",");
+for (let item of arrFromStr) {
+  console.log(item);
+}
 
 /* -------------------------------------------------------------
 EXERCISE 5
@@ -100,7 +105,11 @@ const numbers = [2, 4, 5, 7];
 const doubles = [];
 
 // Write your code here...
-
+for (number of numbers) {
+  let double = number * 2;
+  doubles.push(double);
+}
+console.log(doubles);
 /* -------------------------------------------------------------
 EXERCISE 6
 
@@ -117,11 +126,18 @@ const bands = ["Coldplay", "One Direction", "Spice Girls"];
 const intros = [];
 
 // Loop through the firstNames and lastNames arrays and store the following strings in the intros array:
-// 'Hi, my name is Chris Martin and I am in Coldplay'
-// 'Hi, my name is Harry Styles and I am in One Direction'
-// 'Hi, my name is Sporty Spice and I am in Spice Girls'
+let string1 = "Hi, my name is Chris Martin and I am in Coldplay";
+let string2 = "Hi, my name is Harry Styles and I am in One Direction";
+let string3 = "Hi, my name is Sporty Spice and I am in Spice Girls";
 
 // Write your code here...
+for (let i = 1; i < 4; i++) {
+  intros.push(eval(`string${i}`));
+}
+
+for (let intro of intros) {
+  console.log(intro);
+}
 
 /* -------------------------------------------------------------
 EXERCISE 7
