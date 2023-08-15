@@ -61,6 +61,17 @@ const ticTacToe = [
 ];
 
 // Write your code here...
+for (let row = 0; row < ticTacToe.length; row++) {
+  for (let column = 0; column < ticTacToe[0].length; column++) {
+    if (column == 0) {
+      ticTacToe[row][column] = "x";
+    } else if (column % 2 != 0 && row % 2 == 0) {
+      ticTacToe[row][column] = "o";
+    }
+  }
+}
+
+console.log(ticTacToe);
 
 /* -------------------------------------------------------------
 EXERCISE 4
