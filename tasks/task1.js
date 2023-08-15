@@ -150,3 +150,6 @@ of a variable using the '--' shorthand.
 let counter = 10;
 
 // Write your code here...
+for (let i = 10; i > 0; i--) {
+  console.log(i);
+}
