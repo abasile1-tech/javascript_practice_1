@@ -11,6 +11,15 @@ Finally, 'pop off' the last item in the array and log it out.
 -------------------------------------------------------------- */
 
 // Write your code here...
+const myArray = ["Ex Machina", "The Island", "I am Mother"];
+
+myArray[0] = "Ex Machina 2.0";
+myArray[1] = "The Island 2.0";
+
+myArray.unshift("The Matrix");
+console.log(myArray);
+
+console.log(myArray.pop());
 
 /* -------------------------------------------------------------
 EXERCISE 2
@@ -30,6 +39,9 @@ const programmingLanguages = [
 ];
 
 // Write your code here...
+let vBasicIndex = programmingLanguages.indexOf("Visual Basic");
+programmingLanguages.splice(vBasicIndex, 1);
+console.log(programmingLanguages);
 
 /* -------------------------------------------------------------
 EXERCISE 3
