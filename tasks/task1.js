@@ -126,13 +126,15 @@ const bands = ["Coldplay", "One Direction", "Spice Girls"];
 const intros = [];
 
 // Loop through the firstNames and lastNames arrays and store the following strings in the intros array:
-let string1 = "Hi, my name is Chris Martin and I am in Coldplay";
-let string2 = "Hi, my name is Harry Styles and I am in One Direction";
-let string3 = "Hi, my name is Sporty Spice and I am in Spice Girls";
+// "Hi, my name is Chris Martin and I am in Coldplay";
+// "Hi, my name is Harry Styles and I am in One Direction";
+// "Hi, my name is Sporty Spice and I am in Spice Girls";
 
 // Write your code here...
-for (let i = 1; i < 4; i++) {
-  intros.push(eval(`string${i}`));
+for (let i = 0; i < firstNames.length; i++) {
+  intros.push(
+    `Hi, my name is ${firstNames[i]} ${lastNames[i]} and I am in ${bands[i]}`
+  );
 }
 
 for (let intro of intros) {
