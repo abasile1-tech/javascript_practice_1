@@ -22,3 +22,12 @@ for (const event of events) {
 
 event_h3.classList.add("active");
 console.log(event_h3.classList);
+
+const button = document.getElementById("add-event");
+
+// Try making rapid, repeated clicks on the button to
+// increase the click count. If you take a break between clicks,
+// the count will reset.
+button.addEventListener("click", (event) => {
+  button.textContent = `Click count: ${event.detail}`;
+});
