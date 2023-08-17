@@ -2,6 +2,12 @@ h1 {
   color: red;
 }
 
+
+/* Order matters here (green vs. blue) */
+.active {
+  color: green;
+}
+
 .event__title {
   color: blue;
 }
