@@ -13,3 +13,12 @@ h1.textContent = "Fringe Events!";
 const event_h3 = document.querySelector(".event h3");
 
 event_h3.textContent = "Shit-faced Rabbie Burns";
+
+const events = document.querySelectorAll(".event");
+
+for (const event of events) {
+  console.log(event);
+}
+
+event_h3.classList.add("active");
+console.log(event_h3.classList);
