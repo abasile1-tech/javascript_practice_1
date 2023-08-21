@@ -1,17 +1,17 @@
-const posts = {
-  post1: {
+const posts = [
+  {
     title: "title 1",
     description: "description 1",
   },
-  post2: {
+  {
     title: "title 2",
     description: "description 2",
   },
-};
+];
 
 const postList = document.getElementById("post-list");
 
-for (let post in posts) {
+posts.forEach((post) => {
   const li = document.createElement("li");
   const h3 = document.createElement("h3");
   const p = document.createElement("p");
@@ -21,4 +21,4 @@ for (let post in posts) {
   p.textContent = post.description;
   postList.appendChild(li);
   console.log(postList);
-}
+});
