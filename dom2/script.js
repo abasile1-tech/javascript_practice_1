@@ -31,3 +31,13 @@ const button = document.getElementById("add-event");
 button.addEventListener("click", (event) => {
   button.textContent = `Click count: ${event.detail}`;
 });
+
+const newEvent = document.createElement("li");
+
+const eventList = document.getElementById("event-list");
+
+eventList.appendChild(newEvent);
+
+const newEventTitle = document.createElement("h3");
+
+newEventTitle.textContent = "Ladyboys of Bangkok";
